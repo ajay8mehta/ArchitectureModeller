@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Elite Architecture Modeler</title>
+
+<style src="bootstrap/css/bootstrap.css"></style>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="/js/login.js"></script>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container col-md-4 col-md-offset-4">
+			<h1 style="color: white">Elite Architecture Modeler</h1>
+		</div>
+	</nav>
+
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+
+	<div ng-app="mainApp" ng-controller="loginController">
+
+
+		<form class="form-horizontal" ng-submit="login()" method="post">
+			<div class="form-group">
+				<label class="control-label col-sm-5" for="username">User
+					Name:</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="userName"
+						placeholder="Enter User Name" name="userName"
+						ng-model="login.userName"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-5" for="pwd">Password:</label>
+				<div class="col-sm-2">
+					<input type="password" class="form-control" id="pwd"
+						placeholder="Enter Password" name="pwd" ng-model="login.password"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-5 col-sm-5">
+					<div class="checkbox">
+						<label> <input type="checkbox" name="remember"></input>
+							Remember me <a href="#">Forgot Password</a>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-5 col-sm-5">
+					<button type="submit" class="btn btn-default">Login</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+
+	<nav class="navbar navbar-inverse navbar-static-bottom"
+		role="navigation">
+		<div class="container col-md-2 col-md-offset-5">
+			<h6 style="color: white">&copy; Copyrights Reserved 2017</h6>
+		</div>
+	</nav>
+</body>
+
+</html>
